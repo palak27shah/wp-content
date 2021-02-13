@@ -171,11 +171,29 @@ require get_template_directory() . '/inc/template-functions.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 
+/**
+ * Enqeuing block editor assets
+ */
+function sampletheme_enqueue_block_editor_assets(){
+	wp_enqueue_script(
+		'editor-script',
+		get_template_directory_url() . '/assets/js/editor.js',
+		array( 
+			'wp-blocks', 
+			'wp-dom-ready', 
+			'wp-edit-post'
+		)
+	);
+}
+add_action('enqueue_block_editor_assets', 'sampletheme_enqueue_block_editor_assets');
 
 /**
- * Load Jetpack compatibility file.
+ * Enqeuing block assets
  */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
+function sampletheme_enquue_block_assets(){
+	wp_enqueue_style(
+		'blocks-style',
+		get_template_directory_url() . '/assets/css/blocks.css'
+	);
 }
-
+add_action( 'enqueue_block_assets',  'sampletheme_enqueue_block_assets');
