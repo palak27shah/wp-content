@@ -12,7 +12,7 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
-if ( ! function_exists( 'sample_theme_setup' ) ) :
+if ( ! function_exists( 'sampletheme_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -20,14 +20,14 @@ if ( ! function_exists( 'sample_theme_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function sample_theme_setup() {
+	function sampletheme_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on Sample Theme, use a find and replace
 		 * to change 'sample-theme' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'sample-theme', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'sampletheme', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -100,7 +100,57 @@ if ( ! function_exists( 'sample_theme_setup' ) ) :
 				'flex-height' => true,
 			)
 		);
-	}
+
+/**
+ * Add support for block styles
+ */
+	add_theme_support( 'wp-block-styles' );
+
+/**
+ * Add support for line alignment
+ */
+	add_theme_support( 'align-wide' );
+
+/**
+ * Add support fo rcustom color palatte
+ */
+
+add_theme_support( 'editor-color-palette', array(
+    array(
+        'name' => esc_attr__( 'Magenta', 'sampletheme' ),
+        'slug' => 'magenta',
+        'color' => '#a156b4',
+    ),
+) );
+
+/**
+ * Add upport for custom gradients
+ */
+add_theme_support(
+    'editor-gradient-presets',
+    array()
+);
+
+/**
+ * Add support fo rfont sizes
+ */
+add_theme_support( 'editor-font-sizes', array() );
+
+/**
+ * Add support to disable custom font size
+ */
+add_theme_support( 'disable-custom-font-sizes' );
+
+/**
+ * Add support to disable custom color palatte
+ */
+add_theme_support( 'disable-custom-colors' );
+
+/**
+ * Add support to disable custom gradients
+ */
+add_theme_support( 'disable-custom-gradients' );
+}
 endif;
 add_action( 'after_setup_theme', 'sample_theme_setup' );
 
@@ -141,9 +191,14 @@ add_action( 'widgets_init', 'sample_theme_widgets_init' );
  */
 function sample_theme_scripts() {
 	wp_enqueue_style( 'sample-theme-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'sample-theme-style', 'rtl', 'replace' );
+	
+// Foundations
+wp_enqueue_style( 'foundation-style', get_template_directory_url() . '/assets/css/vendor/foundation.css');
+wp_enqueue_script( 'foundation-script', get_template_directory_url() . '/assets/js/vendor/foundation.js');
 
-	wp_enqueue_script( 'sample-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+// Bootstrap
+// wp_enqueue_style( 'bootstrap-style', get_template_directory_url() . '/assets/css/vendor/bootstrap.css');
+// wp_enqueue_style( 'bootstrap-script', get_template_directory_url() . '/assets/js/vendor/bootstrap.js');
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

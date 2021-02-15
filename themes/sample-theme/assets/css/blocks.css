@@ -1,7 +1,20 @@
-.is-style-fancy-quote{
+.wp-block-quote,
+.wp-block-quote.is-style-default{
     color: blue;
 }
 
-.wp-block-buttons .wp-block-button /wp-block-button__link{
+.wp-block-quote.is-style-fancy-quote{
+    color: red;
+}
+
+.wp-block-buttons .wp-block-button .wp-block-button__link{
     background-color: blue;
+}
+
+.has-magenta-background-color {
+    background-color: #a156b4;
+}
+
+.has-magenta-color {
+    color: #a156b4;
 }
