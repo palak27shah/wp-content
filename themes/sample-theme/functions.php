@@ -72,16 +72,16 @@ if ( ! function_exists( 'sample_theme_setup' ) ) :
 		);
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support(
-			'custom-background',
-			apply_filters(
-				'sample_theme_custom_background_args',
-				array(
-					'default-color' => 'ffffff',
-					'default-image' => '',
-				)
-			)
-		);
+		// add_theme_support(
+		// 	'custom-background',
+		// 	apply_filters(
+		// 		'sample_theme_custom_background_args',
+		// 		array(
+		// 			'default-color' => 'ffffff',
+		// 			'default-image' => '',
+		// 		)
+		// 	)
+		// );
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
@@ -100,6 +100,53 @@ if ( ! function_exists( 'sample_theme_setup' ) ) :
 				'flex-height' => true,
 			)
 		);
+
+		// Add support for default block styles
+add_theme_support( 'wp-block-styles' );
+
+// Add support for wide allignment
+add_theme_support( 'align-wide' );
+
+add_theme_support( 'editor-color-palette', array(
+	array(
+		'name' => esc_attr__( 'Red Moon', 'sample_theme' ),
+		'slug' => 'red-moon',
+		'color' => '#ff5555',
+	),
+	array(
+		'name' => esc_attr__( 'Yellow Sun', 'sample_theme' ),
+		'slug' => 'yellow-sun',
+		'color' => '#ffbb00',
+	),
+	array(
+		'name' => esc_attr__( 'Grass Green', 'sample_theme' ),
+		'slug' => 'grass-green',
+		'color' => '#8abd05',
+	),
+	array(
+		'name' => esc_attr__( 'Sky Blue', 'sample_theme' ),
+		'slug' => 'sky-blue',
+		'color' => '#1e93c9',
+	),
+) );
+
+// Add support for custom gradients
+add_theme_support(
+	'editor-gradient-presets',
+	array()
+);
+
+// Add support for font sizes
+add_theme_support( 'editor-font-sizes', array());
+
+// Disable theme supports
+add_theme_support( 'disable-custom-font-sizes' );
+add_theme_support( 'disable-custom-colors' );
+add_theme_support( 'disable-custom-gradients' );
+
+// Remove core block pattern
+remove_theme_support( 'core-block-patterns' );
+
 	}
 endif;
 add_action( 'after_setup_theme', 'sample_theme_setup' );
@@ -144,7 +191,7 @@ function sample_theme_scripts() {
 
 // Foundations
 	wp_enqueue_style( 'foundation-style' , get_template_directory_uri() . '/assets/css/vendor/foundation.css' );
-	wp_enqueue_script( 'foundation-script', get_template_directory_uri() . '/assets/js/vendor/foundatin.js' );
+	wp_enqueue_script( 'foundation-script', get_template_directory_uri() . '/assets/js/vendor/foundatin.js', array(), false, true );
 
 // Bootstrap
 	// wp_enqueue_style( 'bootstrap-style' , get_template_directory_uri() . '/assets/css/vendor/bootstrap.min.css' );
@@ -161,7 +208,7 @@ add_action( 'wp_enqueue_scripts', 'sample_theme_scripts' );
 /**
  * Implement the Custom Header feature.
  */
-require get_template_directory() . '/inc/custom-header.php';
+// require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
