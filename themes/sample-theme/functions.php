@@ -226,6 +226,11 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Woocommerce hooks.
+ */
+require get_template_directory() . '/inc/woocommerce.php';
+
+/**
  * Enqeuing block editor assets
  */
 function sampletheme_enqueue_block_editor_assets(){
