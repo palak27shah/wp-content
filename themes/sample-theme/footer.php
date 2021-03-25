@@ -12,6 +12,18 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
+		<div class="menu-footer">
+			<?php
+			if (has_nav_menu( 'menu-footer ') ){
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'footer-menu',
+					)
+				);
+			}
+			?>
+		</div>
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'sample-theme' ) ); ?>">
 				<?php

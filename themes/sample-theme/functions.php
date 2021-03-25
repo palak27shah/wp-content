@@ -47,10 +47,11 @@ if ( ! function_exists( 'sample_theme_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
-		// This theme uses wp_nav_menu() in one location.
+		// This theme uses wp_nav_menu() in multiple location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'sample-theme' ),
+				'menu-primary' => esc_html__( 'Primary', 'sampletheme' ),
+				'menu-footer' => esc_html__( 'Footer', 'sampletheme' ),
 			)
 		);
 
