@@ -49,6 +49,8 @@
 			}
 				?>
 
+				<?php echo get_search_form(); ?>
+
 				<?php 
 				$facebook_url = get_theme_mod( 'facebook_url' ); 
 				$twitter_url = get_theme_mod( 'twitter_url' ); 

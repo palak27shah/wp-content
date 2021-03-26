@@ -39,6 +39,9 @@
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'sample-theme' ), 'sample-theme', '<a href="http://palakcshah.com/">Palak Shah</a>' );
 				?>
 		</div><!-- .site-info -->
+		<div class="sopyright">
+			&copy; <?php echo gmdate( 'Y' ); ?>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

@@ -6,6 +6,30 @@
     background-color: blue;
 }
 
+.has-faded-blue-background-color {
+    background-color: #559eb4;
+}
+
+.has-faded-blue-color {
+    color: #559eb4;
+}
+
+.has-asparagus-background-color {
+    color: #8ab455;
+}
+
+.has-asparagus-color {
+    color: #8ab455;
+}
+
+.has-dark-rose-background-color {
+    color: #b45555;
+}
+
+.has-dark-rose-color {
+    color: #b45555;
+}
+
 .wp-block {
     max-width: 80rem;
 }
@@ -13,3 +37,22 @@
 .wp-block[data-align|=wide] {
     max-width: 90rem;
 }
+
+.is-style-alignnarrow {
+    max-width: 70rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* .wp-block-group__inner-container {
+    max-width: cal( 80rem - 90px );
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media ( max-width: 85rem ) {
+    .wp-block-group__inner-container {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+} */

@@ -1,3 +1,39 @@
+body {
+    overflow-x: hidden;
+}
+
 .grid-container {
     max-width: 80rem;
+}
+
+.alignwide {
+    width: 100vw;
+    margin-right: cal( 50% - 45rem );
+    margin-left: cal( 50% - 45rem );
+    max-width: 90vw;
+}
+
+@media ( max-width: 95rem ){
+.alignwide {
+    width: 100vw;
+    margin-right: cal( 50% - 48rem );
+    margin-left: cal( 50% - 48rem );
+    max-width: 96vw;
+}
+}
+
+@media ( max-width: 80rem ){
+    .alignwide {
+        width: 100vw;
+        margin-right: cal( 50% - 48rem );
+        margin-left: cal( 50% - 48rem );
+        max-width: 96vw;
+    }
+    }
+
+.alignfull {
+    width: 100vw;
+    margin-right: cal( 50% - 50vw );
+    margin-left: cal( 50% - 50vw );
+    max-width: 100vw;
 }
