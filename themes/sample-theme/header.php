@@ -49,6 +49,19 @@
 			}
 				?>
 
+				<?php 
+				$facebook_url = get_theme_mod( 'facebook_url' ); 
+				$twitter_url = get_theme_mod( 'twitter_url' ); 
+				if ( $facebook_url ) { 
+					?>
+					<a class="facebook-link" href="<?php echo esc_url( $facebook_url ); ?>"><?php echo esc_html____ ( 'Facebook', 'sampletheme' ); ?>">Facebook</a>
+				<?php } 
+				if ( $twitter_url ) { 
+					?>
+					<a class="facebook-link" href="<?php echo esc_url( $twitter_url ); ?>"><?php echo esc_html____ ( 'Twitter', 'sampletheme' ); ?>">Facebook</a>
+				<?php } ?>
+				
+
 			<div class="cell small-2">
 				<?php echo get_search_form(); ?>
 			</div>

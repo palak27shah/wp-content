@@ -32,23 +32,23 @@ function sample_theme_customize_register( $wp_customize ) {
 		);
 	}
 
-	$wp_customize->add_panel( 
-			'social-media', 
-		array(
-			'priority'       => 10,
-			'capability'     => 'edit_theme_options',
-			'theme_supports' => '',
-			'title'          => 'Social Media',
-			'description'    => 'Add social links',
-		) 
-	);
+	// $wp_customize->add_panel( 
+	// 		'social-media', 
+	// 	array(
+	// 		'priority'       => 10,
+	// 		'capability'     => 'edit_theme_options',
+	// 		'theme_supports' => '',
+	// 		'title'          => 'Social Media',
+	// 		'description'    => 'Add social links',
+	// 	) 
+	// );
 
 	$wp_customize->add_section(
-		'facebook_link',
+		'social_media',
 		array(
 			'title' => 'Facebook Link',
 			'capability' => 'edit_theme_options',
-			'panel' => 'socail_media',
+			// 'panel' => 'socail_media',
 		)
 	);
 
@@ -64,8 +64,25 @@ function sample_theme_customize_register( $wp_customize ) {
 		'facebook_url',
 		array(
 			'label' => 'Facebook URL',
-			'section' => 'Facebook Link',
+			'section' => 'Social Media Section',
 			'settings' => 'facebook_url',
+		)
+	);
+
+	$wp_customize->add_section( 
+		'twitter_url',
+		array(
+			'default' => '',
+			'transport' => 'refresh',
+		)
+	);
+
+	$wp_customize->add_control(
+		'twitter_url',
+		array(
+			'label' => 'Twitter URL',
+			'section' => 'Social Media Section',
+			'settings' => 'twitter_url',
 		)
 	);
 }

@@ -1,0 +1,153 @@
+{"template_categories": [
+
+	{	
+		"id"			:	"advanced",
+		"label" 		: 	"Advanced",
+		"file_path"		:	"advanced/",
+		"templates"		:	[
+
+			{
+				"id"					:	"date-from-to",
+				"label" 				: 	"Date From + To",
+				"file_json"				:	"wsf-section-date-from-to.json",
+				"preview_url"			:	false,
+				"pro_required"			:	true
+			},
+
+			{
+				"id"					:	"file-upload-progress",
+				"label" 				: 	"File Upload + Progress",
+				"file_json"				:	"wsf-section-file-upload-progress.json",
+				"preview_url"			:	false,
+				"pro_required"			:	true
+			},
+
+			{
+				"id"					:	"google-map-search",
+				"label" 				: 	"Google Map + Search",
+				"file_json"				:	"wsf-section-google-map-search.json",
+				"preview_url"			:	false,
+				"pro_required"			:	true
+			},
+
+			{
+				"id"					:	"password-confirmation",
+				"label" 				: 	"Password Confirmation",
+				"file_json"				:	"wsf-section-password-confirmation.json",
+				"preview_url"			:	false,
+				"pro_required"			:	true
+			}
+		]
+	},
+
+	{	
+		"id"			:	"buttons",
+		"label" 		: 	"Buttons",
+		"file_path"		:	"buttons/",
+		"templates"		:	[
+
+			{
+				"id"					:	"gdrp-submit",
+				"label" 				: 	"GDPR Submit",
+				"file_json"				:	"wsf-section-gdpr-submit.json",
+				"preview_url"			:	false,
+				"pro_required"			:	false
+			},
+
+			{
+				"id"					:	"gdrp-submit-save",
+				"label" 				: 	"GDPR Submit + Save",
+				"file_json"				:	"wsf-section-gdpr-submit-save.json",
+				"preview_url"			:	false,
+				"pro_required"			:	true
+			}
+		]
+	},
+
+	{	
+		"id"			:	"contact",
+		"label" 		: 	"Contact",
+		"file_path"		:	"contact/",
+		"templates"		:	[
+
+			{
+				"id"					:	"address-us",
+				"label" 				: 	"Address (US)",
+				"file_json"				:	"wsf-section-address-us.json",
+				"preview_url"			:	false
+			},
+
+			{
+				"id"					:	"address-international",
+				"label" 				: 	"Address (International)",
+				"file_json"				:	"wsf-section-address-international.json",
+				"preview_url"			:	false
+			},
+
+			{
+				"id"					:	"personal-information",
+				"label" 				: 	"Personal Information",
+				"file_json"				:	"wsf-section-personal-information.json",
+				"preview_url"			:	false,
+				"pro_required"			:	true
+			},
+
+			{
+				"id"					:	"social-media",
+				"label" 				: 	"Social Media",
+				"file_json"				:	"wsf-section-social-media.json",
+				"preview_url"			:	false,
+				"pro_required"			:	true
+			}
+		]
+	},
+
+	{	
+
+		"id"			:	"e-commerce",
+		"label" 		: 	"E-Commerce",
+		"file_path"		:	"e-commerce/",
+		"templates"		:	[
+
+			{
+				"id"					:	"billing-shipping-us",
+				"label" 				: 	"Billing & Shipping (US)",
+				"file_json"				:	"wsf-section-billing-shipping-us.json",
+				"preview_url"			:	false,
+				"pro_required"			:	true
+			},
+
+			{
+				"id"					:	"billing-shipping-international",
+				"label" 				: 	"Billing & Shipping (Intl)",
+				"file_json"				:	"wsf-section-billing-shipping-international.json",
+				"preview_url"			:	false,
+				"pro_required"			:	true
+			},
+
+			{
+				"id"					:	"customer-information",
+				"label" 				: 	"Customer Information",
+				"file_json"				:	"wsf-section-customer-information.json",
+				"preview_url"			:	false,
+				"pro_required"			:	true
+			},
+
+			{
+				"id"					:	"order-details",
+				"label" 				: 	"Order Details",
+				"file_json"				:	"wsf-section-order-details.json",
+				"preview_url"			:	false,
+				"pro_required"			:	true
+			},
+
+			{
+				"id"					:	"promo-code",
+				"label" 				: 	"Promo Code",
+				"file_json"				:	"wsf-section-promo-code.json",
+				"preview_url"			:	false,
+				"pro_required"			:	true
+			}
+		]
+	}
+]}
