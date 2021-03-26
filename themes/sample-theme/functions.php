@@ -106,6 +106,8 @@ if ( ! function_exists( 'sample_theme_setup' ) ) :
 add_theme_support( 'wp-block-styles' );
 
 // Add support for wide allignment
+// if ( !_is_page_template( 'templates/sidebar.php' ) ) {
+// }
 add_theme_support( 'align-wide' );
 
 add_theme_support( 'editor-color-palette', array(
@@ -230,6 +232,11 @@ require get_template_directory() . '/inc/customizer.php';
 
 /**
  * Woocommerce hooks.
+ */
+require get_template_directory() . '/inc/post-type.php';
+
+/**
+ * Custom posts types
  */
 require get_template_directory() . '/inc/woocommerce.php';
 
