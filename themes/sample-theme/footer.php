@@ -11,6 +11,8 @@
 
 ?>
 
+<!-- </div> -->
+
 	<footer id="colophon" class="site-footer">
 		<div class="menu-footer">
 			<?php

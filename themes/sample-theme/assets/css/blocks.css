@@ -5,3 +5,11 @@
 .wp-block-buttons .wp-block-button /wp-block-button__link{
     background-color: blue;
 }
+
+.wp-block {
+    max-width: 80rem;
+}
+
+.wp-block[data-align|=wide] {
+    max-width: 90rem;
+}
