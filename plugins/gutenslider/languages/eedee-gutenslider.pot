@@ -1,0 +1,250 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"X-Generator: babel-plugin-makepot\n"
+
+#: src/blocks/gutenslider/block_pro/edit.js:514
+msgid "Change content position"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/edit.js:535
+msgid "Edit Slides"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/edit.js:544
+msgid "Preview Slider"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/edit.js:544
+msgid "Edit Slide Content"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/edit.js:807
+msgid "Add Empty Slide"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/edit.js:819
+msgid "Select background media from your library or add an empty slide."
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/edit.js:839
+msgid "Media Library"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/edit.js:850
+msgid "Add empty slide"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:134
+msgid "Slider Height"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:161
+msgid "Left + Right"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:188
+msgid "Top + Bottom"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:214
+msgid "Slides to Show"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:241
+msgid "Slides to Scroll"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:269
+msgid "Show Dots"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:296
+msgid "Dot Size"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:323
+msgid "Show Arrows"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:334
+msgid "Desktop"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:342
+msgid "Tablet"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:350
+msgid "Mobile"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:350
+msgid "Arrow Size"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:377
+msgid "Arrow X Offset"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:404
+msgid "Arrow Y Offset"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:412
+msgid "Arrow Settings"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:421
+msgid "Dot Settings"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:432
+msgid "Slider Settings"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:436
+msgid "Fade Mode"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:458
+msgid "Slide Mode"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:480
+msgid "Adaptive Height"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:518
+msgid "Autoplay"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:529
+msgid "Loop"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:534
+msgid "Fullscreen Background Slider"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:536
+msgid ""
+"Full Screen Background Slider preview is not available in the editor, check "
+"the live site to see it in action."
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:540
+msgid "Animation Speed (sec)"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:563
+msgid "Autoplay Settings"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:571
+msgid "Pause on Focus"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:576
+msgid "Pause on Hover"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:581
+msgid "Pause on Dots Hover"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:586
+msgid "Slide Duration (sec)"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:601
+msgid "Arrow Style"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:607
+msgid "Arrow Position"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:634
+msgid "Arrow Horizontal Spacing"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:642
+msgid "Arrow Color"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:651
+msgid "Arrow Background Color"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:660
+msgid "Arrow Hover Color"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:669
+msgid "Arrow Hover Background Color"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:678
+msgid "Arrow Mix Blend Mode"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:698
+msgid "Dot Style"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:711
+msgid "Dot Color"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:719
+msgid "Effects"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:725
+msgid "Parallax"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:728
+msgid "Parallax is only enabled in the frontend. Check out the live results there."
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:737
+msgid "Parallax Amount"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:746
+msgid "Colors"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:756
+msgid "Arrows Color"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:761
+msgid "Dots Color"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:767
+msgid "Spacing"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:800
+msgid "Art Settings"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:804
+msgid "Mix Blend Mode"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:817
+msgid "Enable Preview"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:818
+msgid "Enable or disable the preview of \"Mix Blend Mode\" setting above"
+msgstr ""
+
+#: src/blocks/gutenslider/block_pro/inspector-controls.js:823
+msgid "Content Opacity"
+msgstr ""
